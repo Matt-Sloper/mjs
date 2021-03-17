@@ -25,7 +25,7 @@ body {
 }
 
 .page {
-  width: 100%;
+  width: 100vw;
   min-height: 100vh;
 }
 
@@ -43,17 +43,14 @@ a {
   opacity: 0.3;
 }
 
+.display-block {
+  display: block;
+}
+
 #page1 {
-  background: -webkit-gradient(linear, left top, left bottom, from(#2f2f2f), to(#2d2d2d));
-  background: linear-gradient(#2f2f2f, #2d2d2d);
   background: -webkit-gradient(linear, left top, left bottom, from(#424442), to(#2d2d2d));
   background: linear-gradient(#424442, #2d2d2d);
   color: var(--clr-primary-light);
-}
-
-.page2 {
-  background: var(--clr-primary-light);
-  color: black;
 }
 
 header {
@@ -64,7 +61,7 @@ header {
   padding: 1em;
 }
 
-header #hamburger {
+header:hamburger {
   width: 1.3em;
   height: auto;
   cursor: pointer;
@@ -73,10 +70,6 @@ header #hamburger {
 /* turn off in mobile first */
 .qualities, nav, .light-beam-vert, .animation-container {
   display: none;
-}
-
-.display-block {
-  display: block;
 }
 
 nav {
@@ -116,13 +109,6 @@ nav .close-mobile-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   text-align: center;
   margin-top: 4rem;
 }
@@ -187,66 +173,5 @@ nav .close-mobile-nav {
 
 #page1 .hero .secondary-cta a {
   text-decoration: underline;
-}
-
-#page1 .hero .scroll-indicator {
-  position: fixed;
-  bottom: 5vh;
-}
-
-#page1 .hero .scroll-indicator span {
-  display: block;
-  border-right: solid 1px white;
-  border-bottom: solid 1px white;
-  width: 10px;
-  height: 10px;
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
-  -webkit-animation: pulse-scroller 2s infinite;
-  animation: pulse-scroller 2s infinite;
-}
-
-#page1 .hero .scroll-indicator span:nth-child(2) {
-  -webkit-animation-delay: -0.3s;
-  animation-delay: -0.3s;
-  -webkit-transform: rotate(45deg) translate(-8px, -8px);
-  transform: rotate(45deg) translate(-8px, -8px);
-}
-
-#page1 .hero .scroll-indicator span:nth-child(3) {
-  -webkit-animation-delay: .6s;
-  animation-delay: .6s;
-}
-
-@-webkit-keyframes pulse-scroller {
-  0% {
-    opacity: 0;
-    -webkit-transform: rotate(45deg) translate(-10px, -10px);
-    transform: rotate(45deg) translate(-10px, -10px);
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    -webkit-transform: rotate(45deg) translate(10px, 10px);
-    transform: rotate(45deg) translate(10px, 10px);
-  }
-}
-
-@keyframes pulse-scroller {
-  0% {
-    opacity: 0;
-    -webkit-transform: rotate(45deg) translate(-10px, -10px);
-    transform: rotate(45deg) translate(-10px, -10px);
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    -webkit-transform: rotate(45deg) translate(10px, 10px);
-    transform: rotate(45deg) translate(10px, 10px);
-  }
 }
 /*# sourceMappingURL=style.css.map */
