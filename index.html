@@ -4,70 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MJS</title>
-
-    <!--  Preconnect to google fonts origin. -->
-    <link rel="preconnect" href="fonts.googleapis.com" crossorigin />
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100,200;300;400;700&display=swap" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100,200;300;400;700&display=swap" media="print" onload="this.media='all'" />
-    <noscript>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100,200;300;400;700&display=swap" />
-    </noscript>
+    <title>Matt Sloper</title>
 
     <link rel="stylesheet" href="static/css/style.css">
-
 </head>
 <body>
 
-    <div id="home" class="page">
+    <div id="page-01" class="page">
 
         <header>
-            <div class="logo">matt sloper</div>
-            <img id="hamburger" src="static/images/hamburger-menu-white.svg" alt="Open mobile menu">
+            <a href="#" class="logo">matt sloper</a>
+            <img id="mobile-menu" src="static/images/hamburger-menu-white.svg" alt="Open Mobile Menu">
             <nav>
-                <img id="close-mobile-nav" class="close-mobile-nav" src="static/images/close-white.svg" alt="Close mobile menu">
-                <ul class="primary-nav-links">
-                    <li><a href="index.html">home</a></li>
+                <img id="close-mobile-menu" src="static/images/close-white.svg"  alt="Close Mobile Menu">
+                <ul>
+                    <li><a href="mjs.html">home</a></li>
+                    <li class="hidden"><a href="#">about</a></li>
+                    <li class="hidden"><a href="#">resume</a></li>
+                    <li class="hidden"><a href="#">contact</a></li>
                 </ul>
             </nav>
         </header>
 
-        <section id="hero" class="hero">
-            <div class="animation-container"></div>
-
-           <div class="hero-text">
-                <div class="qualities">
-                    <ul>
-                        <li>professional</li>
-                        <li>dedicated</li>
-                        <li>creative</li>
-                        <li>friendly</li>
-                    </ul>
-                </div>
-
-                <div class="title">
-                    <hr class="light-beam-horiz" />
-                    <h1 class="title-1">institutional trading systems developer</h1>
-                    <hr class="light-beam-horiz margin-top-3" />
-                    <h1 class="title-2">designer &amp full stack web developer</h1>
-                </div>
- 
-                <div class="subtitle">Over 2 decades of delivering mission-critical trading software to the investment banking industry. 
-                    Software engineering experience I can now bring to your website build or other software project.
-                </div>
+        <section id="hero">
+            <h1>Software Engineer With Over 2 Decades Delivering Mission-Critical
+                Solutions To The Investment Banking Industry </h1>
+            <div class="roles">
+                <section class="fintech">
+                    <h2>Equities<span>Trading Systems</span>Developer </h2>
+                    <p>Are you a fintech company, investment bank or broker looking to hire an experienced equity trading systems technologist?</p>
+                    <a href="#" class="secondary-cta">check out my resume</a>
+                </section>
+                <section class="webdev">
+                    <h2>Designer &amp <span>Full Stack Web</span>Developer</h2>
+                    <p>Or perhaps you're an individual, organization or business who needs a website or other software application?
+                        <span>I can help make this a reality.</span></p>
+                    <a href="#" class="secondary-cta">see my work</a>
+                </section>
             </div>
-            <div class="cta">
-                <div class="primary-cta">
-                    <a href="#contact.html">get in touch</a>
-                </div>
-                <div class="secondary-cta">
-                    <a href="resume.html">check out my resume</a>
-                </div>
-                <div class="email">Reach me at: 
-                    <span>matthew_sloper@hotmail.com</span>
-                </div>
+
+            <div class="primary-cta">
+                <a href="#">matthew_sloper@hotmail.com</a>
             </div>
-        
+            
         </section>
 
     </div>

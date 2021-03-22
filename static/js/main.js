@@ -1,6 +1,6 @@
-const mobileMenu = document.getElementById('hamburger'),
+const mobileMenu = document.getElementById('mobile-menu'),
 nav = document.querySelector('nav'),
-mobileCloseNav = document.getElementById('close-mobile-nav'),
+mobileCloseNav = document.getElementById('close-mobile-menu'),
 hero = document.getElementById('hero');
 
 mobileMenu.addEventListener('click', () => {
